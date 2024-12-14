@@ -21,7 +21,7 @@ const invalidURLRedirect = ({ match }) => {
 const joinGameRedirect = ({ match }) => {
   return <Redirect to={{
     pathname: PICTIONARY_URL,
-    state: { lobbyLink: match.params.lobbyLink }
+    state: match.params.lobbyLink ? { lobbyLink: match.params.lobbyLink } : undefined
   }} />
 }
 
@@ -37,7 +37,7 @@ const App = () => {
       {/* <AuthProvider> */}
       <Router>
         <Switch>
-          {/* <Route exact path="/" component={Login} /> */}
+          <Route exact path="/" component={joinGameRedirect} />
           <Route exact path={PICTIONARY_URL} component={PictionaryLandingPage} />
           <Route exact path={`${PICTIONARY_URL}/join/:lobbyLink`} render={joinGameRedirect} />
           <Route exact path={`${PICTIONARY_URL}/:server/:lobbyID`} component={Pictionary} />
