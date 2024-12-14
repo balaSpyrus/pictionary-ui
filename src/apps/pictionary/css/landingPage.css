@@ -1,0 +1,99 @@
+.create-user {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.main-view{
+    height: 100%;
+    overflow: auto;
+    background-image: radial-gradient(circle, #f0f0f0, #eddeef, #f8c9de, #ffb4bc, #ffa58d, #f6977f, #ec8871, #e37a64, #c06976, #916078, #655667, #484848);
+}
+
+.create-user>a {
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+    word-break: break-all;
+    text-align: center;
+}
+
+.type {
+    text-transform: capitalize;
+    font-size: larger;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.type.blue {
+    color: blue
+}
+
+.type.green {
+    color: green
+}
+
+
+.form {
+    display: inline-flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    padding: 20px;
+    width: 290px;
+    height: auto;
+    background: #f7f7f7;
+    border-radius: 15px;
+    box-shadow: 7px 5px 0px 0px #a2a2a2;
+    justify-content: center;
+}
+
+.form-container {
+    display: inline-flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 20px;
+    height: auto;
+    justify-content: center;
+}
+
+.link-container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 7px;
+    background: #7dd07d;
+    box-shadow: inset 0px 0px 9px 5px #00000036;
+}
+
+.link-container>span {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
+    color: #475047;
+}
+
+.link-container .btn-grp a {
+    text-decoration: none;
+}
+
+.link-container .btn-grp button {
+    margin: 10px;
+}
+
+.form .form-input {
+    margin: 5px 0px;
+}
+
+.create-user .enter-btn {
+    margin: 10px 0px
+}
+
+.enter-btn a {
+    color: inherit;
+    text-decoration: none;
+}

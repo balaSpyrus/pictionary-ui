@@ -1,0 +1,12 @@
+{
+    "default": {
+        "title": "GRK WEB",
+        "version":null,
+        "description": "We are passionate software engineers who wants to do something useful to the society.. :)"
+    },
+    "pictionary": {
+        "title": "Pictionary",
+        "version":"BETA",
+        "description": "This app will make your leisure time more creative and interactive with your friends and family :)"
+    }
+}

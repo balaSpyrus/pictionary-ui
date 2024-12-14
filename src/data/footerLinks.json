@@ -1,0 +1,15 @@
+[
+    {
+        "title": "Legal",
+        "description": [
+            {
+                "title": "Privacy policy",
+                "link": "privacy.html"
+            },
+            {
+                "title": "Terms of use",
+                "link": "termsofuse.html"
+            }
+        ]
+    }
+]

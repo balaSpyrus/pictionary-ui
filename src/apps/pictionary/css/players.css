@@ -1,0 +1,66 @@
+.player-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.player-list .player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+    min-height: 65px;
+}
+
+.player-list .player>span {
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 65px;
+    text-overflow: ellipsis;
+}
+
+.player-list .player .player-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-list .player .player-icon [class^="place-"] {
+    color: white;
+    font-weight: 600;
+    padding-right: 5px;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px #424242;
+}
+
+.player-list .player .player-icon .place-1 {
+    color: #f2ff2d
+}
+
+.player-list .player .player-icon .place-2 {
+    color: #dad9d9
+}
+
+.player-list .player .player-icon .place-3 {
+    color: #ffb610
+}
+
+@media(max-width:960px) {
+    .pictionary-container>.user-container .player-list {
+        flex-direction: row;
+        align-items: center;
+        overflow-y: hidden;
+    }
+    .player-list .player {
+        transform: scale(0.85);
+        max-height: 58px;
+        min-height: 58px;
+    }
+}

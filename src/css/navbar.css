@@ -1,0 +1,22 @@
+
+.nav-bar,
+.nav-content {
+    min-height: 45px !important;
+    max-height: 45px !important;
+}
+
+.nav-bar .nav-logo {
+    font-size: 30px;
+    box-shadow: none;
+    font-weight: 700;
+    color: white;
+    outline: none;
+    border: none;
+    display: flex;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}

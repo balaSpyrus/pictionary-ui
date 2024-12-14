@@ -1,0 +1,50 @@
+
+.app-list-container {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+@media (max-width:600px){
+    .login-scroll .app-list-container{
+        display: none;
+    }
+}
+
+.app-list-container>h5 {
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    color: #3a6382;
+}
+
+.app-list-panel {
+    display: flex;
+    padding: 15px;
+}
+
+.app-list-panel [class*="app-"] {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 6px;
+    background: #3a6382;
+    font-size: 15px;
+    text-align: center;
+    transition: 0.2s all ease-in-out;
+}
+
+.app-list-panel [class*="app-"]:hover {
+    background: #5c96c1;
+    box-shadow: 0px 4px 1px #7f7d7d, inset 0px 0px 20px 3px #2e4f67;
+    transition: 0.2s all ease-in-out;
+}
+
+.app-list-panel>a {
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}

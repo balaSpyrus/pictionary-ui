@@ -1,0 +1,135 @@
+.pictionary-container {
+    overflow: hidden;
+}
+
+.pictionary-container>* {
+    position: relative;
+}
+
+.pictionary-container .chat-container>* {
+    padding: 10px !important;
+}
+
+.pictionary-container .user-container {
+    overflow: auto;
+    max-height: 100vh;
+    background-image: linear-gradient(to bottom, #343434, #544b54, #7e616c, #ab7979, #cf967e, #cf9673, #cd9667, #c8985c, #af7441, #96512a, #7b2f16, #600303);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.pictionary-container .canvas-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: auto;
+}
+
+.pictionary-container .user-container .app-action-container {
+    display: flex;
+    flex-direction: column;
+    background: #8080806b;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.pictionary-container .user-container .app-action-container.small {
+    max-width: 40px;
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+.pictionary-container .user-container .app-action-container.small>button {
+    padding: 5px;
+}
+
+.app-action {
+    text-align: center;
+    padding: 0px 5px;
+    font-size: 12px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: white;
+    opacity: 0.8;
+    transition: all 0.2s ease-in-out;
+}
+
+.pictionary-container .user-container .app-action-container .app-action:hover {
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+.pictionary-container .user-container .app-action-container .app-action>*:first-child {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    height: 35px;
+    width: 35px;
+    background: #191818c7;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:960px) {
+    .pictionary-container>* {
+        width: 100%;
+    }
+    .app-action {
+        padding: 0px;
+        font-size: 14px;
+        display: inline-flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-weight: 500;
+        text-transform: capitalize;
+        color: white;
+        width: 100%;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .app-action>a{
+        text-decoration: none !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .app-action svg+span, .app-action svg {
+        color: white;
+        padding-right: 5px;
+    }
+    .pictionary-container>.user-container {
+        height: 8%;
+        flex-direction: row;
+    }
+    .pictionary-container>.canvas-container {
+        height: 62%;
+    }
+    .pictionary-container>.canvas-container {
+        height: 82%;
+    }
+    .pictionary-container>.user-container~.chat-container {
+        height: 30%;
+    }
+    .pictionary-container>.chat-container {
+        overflow: hidden;
+        height: 18%;
+    }
+    .pictionary-container .user-container .app-action-container {
+        flex-direction: row;
+        border-radius: 10px 0px 0px 10px;
+        overflow: auto;
+    }
+}
