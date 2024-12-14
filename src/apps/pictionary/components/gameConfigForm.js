@@ -11,7 +11,7 @@ import { getServer, SERVERS } from '../../../util/servers';
 
 const getLink = linkData => {
     let [server, room] = linkData.split('-')
-    return `/apps/pictionary/${server}/${room}`
+    return `/${server}/${room}`
 }
 const getApiURL = server => {
     return `https://${server}/pictionary/v1/create_room`
@@ -139,7 +139,7 @@ const CopyLink = ({ linkData }) => {
     }))(Button);
 
     const onClickCopyLink = () => {
-        copyToClipboard(`${window.location.origin}/apps/pictionary/join/${linkData}`)
+        copyToClipboard(`${window.location.origin}/join/${linkData}`)
         setButtonText('Copied!');
         setTimeout(() => {
             setButtonText('Copy lobby link');
@@ -149,12 +149,12 @@ const CopyLink = ({ linkData }) => {
 
     return (
         <div className='link-container'>
-            <span>{`Lobby link : ${window.location.origin}/apps/pictionary/join/${linkData}`}</span>
+            <span>{`Lobby link : ${window.location.origin}/join/${linkData}`}</span>
             <div className='btn-grp'>
                 <RouterLink to={getLink(linkData)}>
                     <ColorButton variant="outlined">
                         Go to Lobby
-            </ColorButton>
+                    </ColorButton>
                 </RouterLink>
                 <ColorButton variant="outlined" onClick={onClickCopyLink}>
                     {buttonText}

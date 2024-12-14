@@ -4,7 +4,7 @@ import CryptoJS from 'crypto-js';
 const passPhrase = 'server'
 
 const serverInfo = {
-    1: CryptoJS.AES.encrypt(`pictionary-grkweb.herokuapp.com`, passPhrase).toString()
+    1: CryptoJS.AES.encrypt(`api.url4u.in`, passPhrase).toString()
 }
 
 export const SERVERS = Object.keys(serverInfo)

@@ -246,7 +246,7 @@ const Pictionary = ({ match, history }) => {
                 {
                     setLoadingMsg('Invalid Lobby...')
                     clientRef.current && clientRef.current.disconnect()
-                    setTimeout(() => { history.push('/apps/pictionary') }, 1000)
+                    setTimeout(() => { history.push('/') }, 1000)
                     break;
                 }
             default:
@@ -285,7 +285,7 @@ const Pictionary = ({ match, history }) => {
             <Grid container className="h-100 pictionary-container">
                 {
                     !isActive &&
-                    chatInputFocused &&
+                        chatInputFocused &&
                         isSmallerResolution ? null :
                         <Grid item sm={12} md={1} className="user-container">
                             <Players userList={userList} userId={playerDetails.userId} />

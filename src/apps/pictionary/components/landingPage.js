@@ -78,7 +78,7 @@ const useStyles = makeStyles((theme) => ({
 const LandingPage = ({ location }) => {
 
     const classes = useStyles();
-    const about = getAboutDetails('pictionary', `/apps/pictionary`);
+    const about = getAboutDetails('pictionary');
     const getLobbyLink = useMemo(() => location.state ? location.state.lobbyLink : '', [location.state])
     const onAboutClick = () => localStorage.setItem('aboutData', JSON.stringify(about))
 
@@ -90,7 +90,7 @@ const LandingPage = ({ location }) => {
                     <Link variant="button" color="textPrimary" href="https://forms.gle/vUZQrMxznRD5q4uy9"
                         target="_target" rel="noopener noreferrer" className={classes.link}>
                         Feedback
-                        </Link>
+                    </Link>
                     <RouterLink
                         className={clsx(classes.link, classes.routerLink)}
                         onClick={onAboutClick}

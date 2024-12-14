@@ -26,7 +26,7 @@ const ActionItems = ({ serverID, lobbyID }) => {
     };
 
     const onCopyLinkClick = () => {
-        copyToClipboard(`${window.location.origin}/apps/pictionary/join/${serverID}-${lobbyID}`)
+        copyToClipboard(`${window.location.origin}/join/${serverID}-${lobbyID}`)
         setCopyClicked(true)
         setTimeout(() => {
             setCopyClicked(false)
@@ -39,7 +39,7 @@ const ActionItems = ({ serverID, lobbyID }) => {
             Icon: HomeIcon,
             label: `home`,
             isLink: true,
-            action: '/apps/pictionary'
+            action: '/'
         },
         {
             Icon: FileCopyIcon,
@@ -59,7 +59,7 @@ const ActionItems = ({ serverID, lobbyID }) => {
             isLink: true,
             action: {
                 link: '/about',
-                data: getAboutDetails('pictionary', `/apps/pictionary/${serverID}/${lobbyID}`)
+                data: getAboutDetails('pictionary', `/${serverID}/${lobbyID}`)
             }
         }
     ]
