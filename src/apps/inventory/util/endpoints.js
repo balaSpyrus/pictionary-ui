@@ -7,9 +7,9 @@ const CONFIG = {
 }
 
 const END_POINT = Object.freeze({
-    API: 'https://grkweb-api.herokuapp.com/inv/v1/inventory',
-    GET_META_DATA: 'https://grkweb-api.herokuapp.com/inv/v1/meta',
-    WAKE: 'https://grkweb-api.herokuapp.com/inv/v1/health'
+    API: 'https://api.url4u.in/inv/v1/inventory',
+    GET_META_DATA: 'https://api.url4u.in/inv/v1/meta',
+    WAKE: 'https://api.url4u.in/inv/v1/health'
 })
 
 export const setInventoryHeader = (key, value, isHeader = true) => {
