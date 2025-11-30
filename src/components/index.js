@@ -1,27 +1,9 @@
-import Panel from "./core/panel";
-import AppModal from "./core/appModal";
-import AppList from "./appList";
-import Login from "./core//login";
-import Loader from "./core/loader";
-import MainView from "./mainView";
-import PrivateRoute from "./core/privateRoute";
-import AppDrawer from "./core/drawer";
-import ProfileMenu from "./core/profileMenu";
-import NavBar from "./core/navBar";
-import About from "./core/about";
-import PageNotFound from "./core/pageNotFound";
+import Canvas from "./canvas";
+import ChatBox from "./chatBox";
+import LandingPage from "./landingPage";
+import Players from "./players";
+import About from "./about";
+import PageNotFound from "./pageNotFound";
 
-export {
-    Panel,
-    AppModal,
-    AppList,
-    MainView,
-    Login,
-    AppDrawer,
-    PrivateRoute,
-    ProfileMenu,
-    NavBar,
-    About,
-    PageNotFound,
-    Loader
-};
+export { Canvas, ChatBox, Players, LandingPage, About, PageNotFound };
+

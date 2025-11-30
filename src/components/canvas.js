@@ -6,10 +6,10 @@ import RemoveIcon from '@material-ui/icons/Remove';
 import UndoIcon from '@material-ui/icons/Undo';
 import React, { useEffect, useMemo, useRef, useState, useCallback, useLayoutEffect, forwardRef } from 'react';
 import CanvasDraw from 'react-canvas-draw';
-import { debounce } from '../../../util/commonUtil';
+import { debounce } from '../util/commonUtil';
 import { colorPallete } from '../util/colors';
 import { SOC_REQ_TYPES } from '../util/socketRequestTypes';
-import './../css/canvas.css';
+import '../css/canvas.css';
 import { SelectWord } from './overScreen';
 import { compress } from 'lz-string';
 

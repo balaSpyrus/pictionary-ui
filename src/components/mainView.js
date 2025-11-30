@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import Scrollbars from 'react-custom-scrollbars';
 import { AppDrawer, NavBar } from '.';
 import '../css/navbar.css';
-import { drawerWidth } from './core/drawer';
+import { drawerWidth } from './drawer';
 import { sideBarMenus } from '../util/staticData';
 
 const useStyles = makeStyles(() => ({
@@ -29,13 +29,7 @@ const MainView = ({ children, hasSideBar, location }) => {
     const classes = useStyles();
 
     const getMenuList = () => {
-
-        switch (location.pathname) {
-            case '/apps/inventory':
-                return sideBarMenus.inventory
-            default:
-                return sideBarMenus.default
-        }
+        return sideBarMenus.default
     }
 
     const renderUI = () => {

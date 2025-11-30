@@ -7,8 +7,8 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 import isExternal from 'is-url-external';
 import React, { useMemo, useState } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
-import { copyToClipboard } from '../../../util/commonUtil';
-import { getAboutDetails } from '../../../util/staticData';
+import { copyToClipboard } from '../util/commonUtil';
+import { getAboutDetails } from '../util/staticData';
 
 const ActionItems = ({ serverID, lobbyID }) => {
 

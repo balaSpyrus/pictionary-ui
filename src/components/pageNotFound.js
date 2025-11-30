@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router';
-import '../../css/pageNotFound.css'
+import '../css/pageNotFound.css'
 
 const PageNotFound = () => {
     let location = useLocation();

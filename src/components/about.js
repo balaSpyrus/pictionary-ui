@@ -13,7 +13,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import React, { useEffect } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import Copyright from './copyright';
-import { getAboutDetails } from '../../util/staticData';
+import { getAboutDetails } from '../util/staticData';
 import { Badge } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
@@ -113,7 +113,7 @@ const About = () => {
                                     <RouterLink to={backLink}>
                                         <Button variant="contained" color="primary">
                                             Back
-                                    </Button>
+                                        </Button>
                                     </RouterLink>
                                 </Grid>
                             </Grid>

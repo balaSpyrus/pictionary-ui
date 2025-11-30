@@ -2,7 +2,7 @@ import { Container, Link, makeStyles, Typography } from '@material-ui/core';
 import isExternal from 'is-url-external';
 import React from 'react';
 import { Route as RouterLink } from 'react-router-dom';
-import { footerContent } from '../../util/staticData';
+import { footerContent } from '../util/staticData';
 
 const useStyles = makeStyles((theme) => ({
     footerLink: {
@@ -41,7 +41,7 @@ const Copyright = () => {
     const classes = useStyles();
     return (
         <Container>
-            {footerContent.map((footer,i) => (
+            {footerContent.map((footer, i) => (
                 <ul className={classes.list} key={i}>
                     {footer.description.map(item => (
                         <li key={item.title} className={classes.listItem}>
@@ -51,7 +51,7 @@ const Copyright = () => {
                                         {item.title}
                                     </Link>
                                     :
-                                    <RouterLink to={`/apps/${item.link}`} className={classes.footerLink}>
+                                    <RouterLink to={`/${item.link}`} className={classes.footerLink}>
                                         {item.title}
                                     </RouterLink>
                             }
@@ -63,7 +63,7 @@ const Copyright = () => {
                 {'Copyright © '}
                 <Link color="inherit" href="https://grkweb.com/">
                     grkweb.com
-      </Link>{' '}
+                </Link>{' '}
                 {new Date().getFullYear()}
                 {'.'}
             </Typography>

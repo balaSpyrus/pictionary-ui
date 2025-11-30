@@ -1,7 +1,7 @@
 import { Avatar, makeStyles } from '@material-ui/core';
 import React from 'react';
 import { getColor } from '../util/colors';
-import './../css/players.css';
+import '../css/players.css';
 
 const useStyles = makeStyles((theme) => ({
     small: {

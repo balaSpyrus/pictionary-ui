@@ -2,11 +2,10 @@ import { Button, FormControl, InputLabel, MenuItem, Select, TextField, Typograph
 import { green } from '@material-ui/core/colors';
 import React, { useMemo, useState } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
-import { firebaseApp } from '../../../auth/firebase';
-import { Loader } from '../../../components';
-import { copyToClipboard } from '../../../util/commonUtil';
-import { getCookie, setCookie } from '../../../util/cookieHandler';
-import { getServer, SERVERS } from '../../../util/servers';
+import Loader from './loader';
+import { copyToClipboard } from '../util/commonUtil';
+import { getCookie, setCookie } from '../util/cookieHandler';
+import { getServer, SERVERS } from '../util/servers';
 
 
 const getLink = linkData => {
@@ -16,7 +15,6 @@ const getLink = linkData => {
 const getApiURL = server => {
     return `https://${server}/pictionary/v1/create_room`
 }
-const analytics = firebaseApp().analytics();
 
 const ConfigForm = ({ lobbyLink }) => {
 
@@ -44,7 +42,6 @@ const ConfigForm = ({ lobbyLink }) => {
     }
 
     const getSharableLink = async () => {
-        analytics.logEvent('create_lobby');
         for (let index in SERVERS) {
 
             let url = getApiURL(getServer(SERVERS[index]));

@@ -1,6 +1,6 @@
 import { Badge, Button, Typography } from '@material-ui/core'
 import React, { useMemo } from 'react'
-import { getCookie } from '../../../util/cookieHandler'
+import { getCookie } from '../util/cookieHandler'
 import '../css/overScreen.css'
 import { SOC_REQ_TYPES } from '../util/socketRequestTypes'
 

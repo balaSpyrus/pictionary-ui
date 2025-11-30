@@ -3,18 +3,17 @@ import { decompress } from 'lz-string';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { withRouter } from 'react-router';
 import SockJsClient from 'react-stomp';
-import { Canvas, ChatBox, Players } from '.';
-import { firebaseApp } from '../../../auth/firebase';
-import { Loader } from '../../../components';
-import { getCookie } from '../../../util/cookieHandler';
-import { getServer } from '../../../util/servers';
+import Loader from './loader';
+import { getCookie } from '../util/cookieHandler';
+import { getServer } from '../util/servers';
 import { SOC_REQ_TYPES } from '../util/socketRequestTypes';
 import { getGameInitialState, getGameOverResults, getGameState, onCorrectWord, onUserConnect, onUserDisconnect, setNewMsg, updatePlayerDetails } from '../util/socketResponseHandler';
-import './../css/gamePage.css';
+import '../css/gamePage.css';
 import ActionItems from './actionItems';
 import { FinalScores, StartScreen, UserScores } from './overScreen';
-
-const analytics = firebaseApp().analytics();
+import Players from './players';
+import Canvas from './canvas';
+import ChatBox from './chatBox';
 
 
 const Pictionary = ({ match, history }) => {
@@ -65,10 +64,6 @@ const Pictionary = ({ match, history }) => {
     )
 
     useEffect(() => {
-        analytics.logEvent('join_lobby', {
-            server: `${server}`,
-            value: `${lobbyID}`
-        });
         setLoadingMsg('Preparing the canvas...')
     }, [server, lobbyID])
 

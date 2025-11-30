@@ -1,5 +1,5 @@
 {
-  "name": "inventory",
+  "name": "pictionary",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,7 +10,6 @@
     "@testing-library/user-event": "^7.2.1",
     "clsx": "^1.1.0",
     "crypto-js": "^4.0.0",
-    "firebase": "^7.13.1",
     "is-url-external": "^1.0.3",
     "lz-string": "^1.4.4",
     "match-sorter": "^4.1.0",
@@ -18,7 +17,6 @@
     "react-canvas-draw": "^1.1.1",
     "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.13.1",
-    "react-firebaseui": "^4.1.0",
     "react-modal": "^3.11.2",
     "react-router": "^5.1.2",
     "react-router-dom": "^5.1.2",

@@ -1,120 +1,100 @@
 .d-flex {
-    display: flex;
+  display: flex;
 }
 
 .icon {
-    font-size: 30px;
-    cursor: pointer;
+  font-size: 30px;
+  cursor: pointer;
 }
 
 .App {
-    background: #ffffff;
+  background: #ffffff;
 }
 
-html, body, #root, .App {
-    height: 100%;
-    overflow: auto;
-}
-
-.login-header {
-    padding: 25px;
-    text-align: center;
-}
-
-.login-header h4 {
-    color: #9a9a9a;
-}
-
-.login-header h3 {
-    font-size: 30px;
-    color: #3a6382;
-}
-
-.login-header span {
-    display: block;
-    color: #436a88;
+html,
+body,
+#root,
+.App {
+  height: 100%;
+  overflow: auto;
 }
 
 .loading {
-    display: block;
-    color: #29425f !important;
-    text-align: center;
-    font-size: 20px !important;
+  display: block;
+  color: #29425f !important;
+  text-align: center;
+  font-size: 20px !important;
 }
 
 .loading i {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 .inv-panel {
-    height: calc(100vh - 45px);
+  height: calc(100vh - 45px);
 }
 
-.MuiCardContent-root{
-    height: 100%;
+.MuiCardContent-root {
+  height: 100%;
 }
 
 .nopadding {
-    padding: 0 !important;
-    margin: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 /* fire base UI */
 
 .signedIn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .logo {
-    font-family: 'Amaranth', sans-serif;
-    font-size: 200%;
+  font-family: "Amaranth", sans-serif;
+  font-size: 200%;
 }
 
 .logoIcon {
-    top: 4px;
-    font-size: 32px;
-    margin-right: -2px;
-    position: relative;
+  top: 4px;
+  font-size: 32px;
+  margin-right: -2px;
+  position: relative;
 }
 
 .caption {
-    margin: 20px 0 40px 0;
-    font-family: 'Amaranth', sans-serif;
-    font-size: 18px;
-    opacity: 0.8;
+  margin: 20px 0 40px 0;
+  font-family: "Amaranth", sans-serif;
+  font-size: 18px;
+  opacity: 0.8;
 }
 
 .skip {
-    font-weight: lighter;
-    color: white;
-    opacity: 0.7;
-    width: 100%;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
+  font-weight: lighter;
+  color: white;
+  opacity: 0.7;
+  width: 100%;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .skip:hover {
-    text-decoration: underline;
-}
-
-.firebaseUi {
-    min-width: 250px;
+  text-decoration: underline;
 }
 
 .button {
-    cursor: pointer;
-    color: blue;
-    text-decoration: underline;
-    margin-top: 10px;
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+  margin-top: 10px;
 }
 
 .note {
-    margin-bottom: 10px;
-    color: #6d6d6d;
-    text-align: center;
+  margin-bottom: 10px;
+  color: #6d6d6d;
+  text-align: center;
 }

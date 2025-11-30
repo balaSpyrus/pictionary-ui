@@ -8,9 +8,9 @@ import clsx from 'clsx';
 import React, { useMemo } from 'react';
 import { withRouter } from 'react-router';
 import { Link as RouterLink } from 'react-router-dom';
-import { NavBar } from '../../../components';
-import Copyright from '../../../components/core/copyright';
-import { getAboutDetails } from '../../../util/staticData';
+import NavBar from './navBar';
+import Copyright from './copyright';
+import { getAboutDetails } from '../util/staticData';
 import './../css/landingPage.css';
 import ConfigForm from './gameConfigForm';
 

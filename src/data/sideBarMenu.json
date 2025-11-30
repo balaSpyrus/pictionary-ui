@@ -1,25 +1,6 @@
 {
-    "inventory": [
-        [
-            "stocks",
-            "table",
-            "history"
-        ],
-        [
-            "settings"
-        ]
-    ],
-    "default": [
-        [
-            "Inbox",
-            "Starred",
-            "Send email",
-            "Drafts"
-        ],
-        [
-            "All mail",
-            "Trash",
-            "Spam"
-        ]
-    ]
+  "default": [
+    ["Inbox", "Starred", "Send email", "Drafts"],
+    ["All mail", "Trash", "Spam"]
+  ]
 }

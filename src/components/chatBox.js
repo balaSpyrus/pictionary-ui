@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef, useMemo, forwardRef } from 'react';
 import Sound from 'react-sound';
 import { TextField, IconButton, useMediaQuery } from '@material-ui/core';
 import { SOC_REQ_TYPES } from '../util/socketRequestTypes';
-import './../css/chatbox.css'
+import '../css/chatbox.css'
 import SendIcon from '@material-ui/icons/Send';
 
 const ChatBox = ({ msgList, sendSocketReq, userId, clue, isActive, setChatInputFocus }, inputRef) => {
